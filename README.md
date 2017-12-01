@@ -1,4 +1,4 @@
-## react-ethereum-provider
+# react-ethereum-provider
 
 A simple provider to make it easier to connect to web3 / Ethereum.
 
@@ -6,8 +6,17 @@ Note that your App must be wrapped in an `<EthereumProvider>` component that pas
 
 This library is still a work in progress. I intend to build out more methods as they are required in our apps.
 
+## Installation
 
-### Usage
+```bash
+# npm
+npm install react-ethereum-provider --save
+
+# yarn
+yarn add react-ethereum-provider
+```
+
+## Usage
 
 Example Component:
 ```javascript
@@ -48,6 +57,6 @@ export default () => {
 
 ```
 
-### Future work
+## Future work
 Currently this library expects web3.js, however I think I might abstract it a bit to accept either EthJS or web3.js in the future.
 Send a pull request if you add something useful!
