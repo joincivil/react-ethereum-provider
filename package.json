@@ -1,6 +1,6 @@
 {
   "name": "react-ethereum-provider",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Inject web3 provider into your React app",
   "main": "lib/index.js",
   "scripts": {

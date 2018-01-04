@@ -10,15 +10,8 @@ export default (Web3) => {
     sign: function(payload){
       if(!this.connected) throw new Error("Not connected")
 
-      return new Promise( (resolve, reject) => {
-        const data = JSON.stringify(payload)
-
-        console.log("signing ", data)
-        this.connection.web3.eth.personal.sign(data, this.accounts.value[0], (err, result) => {
-          if(err) reject(err)
-          else resolve(result)
-        })
-      })
+      console.log("signing ", payload)
+      return this.connection.web3.eth.personal.sign(payload, this.accounts.value[0])
     }
   }
 
